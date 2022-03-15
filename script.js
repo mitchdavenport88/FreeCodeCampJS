@@ -1,17 +1,25 @@
-let countEl = document.getElementById("count-el")
-let saveEl = document.getElementById("save-el")
-let count = 0
+let num1 = 8
+let num2 = 2
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
+sumEl = document.getElementById("sum-el")
 
-function increment() {
-    count += 1
-    countEl.textContent = count
+function add() {
+    let result = num1 + num2
+    sumEl.textContent = "Sum: " + result
 }
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-    count = 0
-    countEl.textContent = count
+function subtract() {
+    let result = num1 - num2
+    sumEl.textContent = "Sum: " + result
 }
 
-console.log("Let's count people on the subway!")
+function divide() {
+    let result = num1 / num2
+    sumEl.textContent = "Sum: " + result
+}
+
+function multiply() {
+    let result = num1 * num2
+    sumEl.textContent = "Sum: " + result
+}
